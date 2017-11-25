@@ -1,0 +1,79 @@
+@charset "UTF=8";
+
+body {
+	background: #ccccff;
+}
+
+
+body, input, button {
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 50px; 		/*CHANGE THIS*/
+	position: fixed;
+	background: #7f7fff;
+	padding: 25px;
+	border-radius: 5px;
+	text-align: center;
+	border-bottom-right-radius: 5px;
+	z-index: 5;
+	top: 0;
+	left: 0;
+}
+
+header input {
+	width: 80%;
+	height: 50%;
+	background: #e5e5ff;
+	border-radius: 5px;
+	border: 0px;
+	padding: 5px;
+	font-size: 15px;
+	text-indent: 20px;
+
+	--webkit-appearance: none;
+	--moz-appearance: none;
+	--ms-appearance: none;
+	--o-appearance: none;
+
+}
+
+header input::-webkit-input-placeholder {
+	color: black;
+}
+
+
+header input::-moz-input-placeholder {
+	color: black;
+}
+
+
+header input::-moz-input-placeholder {
+	color: black;
+}
+
+
+header input::-ms-input-placeholder {
+	color: black;
+}
+
+header button {
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 15;
+	z-index: 2;
+	border-radius: 5px;
+	border: 0;
+	padding: 5px;
+	font-size: 20px;
+	cursor: pointer;
+
+	--webkit-appearance: none;
+	--moz-appearance: none;
+	--ms-appearance: none;
+	--o-appearance: none;
+
+}
