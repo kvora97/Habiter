@@ -2,6 +2,8 @@
 
 body {
 	background: #ccccff;
+	padding: 100px 0px 0px 0px;
+
 }
 
 
@@ -11,27 +13,29 @@ body, input, button {
 
 header {
 	width: 100%;
-	height: 50px; 		/*CHANGE THIS*/
+	height: 100px; 		/*CHANGE THIS*/
 	position: fixed;
 	background: #7f7fff;
-	padding: 25px;
-	border-radius: 5px;
-	text-align: center;
-	border-bottom-right-radius: 5px;
-	z-index: 5;
+	padding: 15px;
 	top: 0;
 	left: 0;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	z-index: 5;
+
 }
 
 header input {
-	width: 80%;
-	height: 50%;
+	width: 88%;
+	height: 50px;
 	background: #e5e5ff;
-	border-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
 	border: 0px;
 	padding: 5px;
 	font-size: 15px;
 	text-indent: 20px;
+
 
 	--webkit-appearance: none;
 	--moz-appearance: none;
@@ -60,15 +64,16 @@ header input::-ms-input-placeholder {
 }
 
 header button {
-	width: 35px;
-	height: 35px;
+	width: 60px;
+	height: 60px;
 	position: absolute;
 	top: 15;
 	z-index: 2;
-	border-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
 	border: 0;
 	padding: 5px;
-	font-size: 20px;
+	font-size: 40px;
 	cursor: pointer;
 
 	--webkit-appearance: none;
@@ -76,4 +81,33 @@ header button {
 	--ms-appearance: none;
 	--o-appearance: none;
 
+}
+
+.container {
+	width: 100%;
+}
+
+ul.todo {
+	width: 100%;
+	float: left;
+	padding: 25px;
+}
+
+ul.todo ul {
+	width: 100%;
+	height: 50px;
+	float: left;
+	background: #fff;
+	border-radius: 5px;
+	position: relative;
+	margin: 0 0 10px 0;
+	padding: 0 100px 0 0;
+}
+
+ul.todo ul .buttons {
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
