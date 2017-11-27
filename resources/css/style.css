@@ -194,7 +194,7 @@ ul.todo ul .buttons button.remove:hover svg .fill {
 
 ul.todo#completed:not(:empty) {
 	padding: 60px 0 0 0;
-	position: relative;
+	position: relative; 
 }
 
 ul.todo#completed:not(:empty):before {
